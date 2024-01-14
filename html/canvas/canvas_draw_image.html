@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>The Image to Refer to </p>
+        <img src="images/leonardo_da-vinci_painting.jpg" id="leonardo"  width="200" height="300"/>
+
+        <p>The canvas to fill</p>
+        <canvas id="drawImageCanvas" width="400" height="500" style="border: 1px solid black;">You browser does not support canvas</canvas>
+
+        <input type="button" onclick="drawOnCanvas()" value="Start Drawing" /> 
+
+        <script>
+            function drawOnCanvas() {
+                var c = document.getElementById("drawImageCanvas");
+                var ctx = c.getContext("2d");
+                var img = document.getElementById("leonardo");
+
+                ctx.drawImage(img, 10, 10);
+            }
+        </script>
+    </body>
+</html>
