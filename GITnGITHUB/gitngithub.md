@@ -1,5 +1,6 @@
 # GIT AND GITHUB ESSENTIALS
 
+<br/>
 
 ## GIT COMMANDS
 
