@@ -16,9 +16,9 @@
 | git rm --cached path/to/file                   | Removes files in the entered path from staging area                           | `rm file.name`                                              |
 | git commit -m "some useful message"            | Marks a logical conclusion of files being worked on with a message stamp on   | ![git_commit](/coding/devOps/images/tenant_id_8.jpeg)       |
 | git log                                        | Lists commit history                                                          | ![git_commit](/coding/devOps/images/tenant_id_8.jpeg)       |
-| git commit --amend -m "useful message amended" | Amends th latest git commit message                                           | `![git_commit](/coding/devOps/images/tenant_id_8.jpeg)      |
-| git push -u origin branch_name                 | Moves files from local machine staging area to be hosted on github repository | `git version 2.39.2`                                        |
-| git --version                                  | Check github version thats been installed                                     | `git version 2.39.2`                                        |
+| git commit --amend -m "useful message amended" | Amends th latest git commit message                                           | ![git_commit](/coding/devOps/images/tenant_id_8.jpeg)       |
+| git push -u origin branch_name OR git push     | Moves files from local machine staging area to be hosted on github repository | ![git_commit](/coding/devOps/images/tenant_id_8.jpeg)       |
+| git pull                                       | Brings the changes from github and makes a copy on local machine              | `git version 2.39.2`                                        |
 | git --version                                  | Check github version thats been installed                                     | `git version 2.39.2`                                        |
 | git --version                                  | Check github version thats been installed                                     | `git version 2.39.2`                                        |
 | git --version                                  | Check github version thats been installed                                     | `git version 2.39.2`                                        |
