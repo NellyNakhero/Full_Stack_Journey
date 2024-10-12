@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Widget</title>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <style>
+        .box {
+            padding: 100px 0;
+            width: 200px;
+            text-align: center;
+            background: #eee;
+            margin: 20px;
+            display: inline-block;
+        }
+        li {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px auto;
+            padding: 30px;
+            background: #ddd;
+            border-radius: 10px;
+        }
+        img {
+            width: 200px;
+            height: 150px;
+        }
+
+        li.fav {
+            background-color: #ff9ed2;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Amazing Grace :) </h1>
+
+    <div id="widget">
+        <div v-if="showSongs" >
+            <ul>
+                <li v-for="song in songs" :class="{ fav : song.isFav}" @click="toggleIsFav(song)">
+                    <h2>{{ song.title }} </h2>
+                    <img :src="song.thumbnail" :alt="song.title" srcset="">
+                    <p>{{ song.artist }} : {{ song.length}}</p>
+
+                </li>
+            </ul>
+            <p v-for="artist in filteredSongs" >
+                <span>Your Fav Artist is <b>|{{artist.artist}}|</b> </span>
+            </p>
+            <!-- <button type="button" v-on:click="updateLength">Increase length</button>
+            <button type="button" @click="length--">Decrease length</button> -->
+        </div>
+
+        <button type="button" @click="toggleShowSongs">
+            <span v-if="showSongs" >Hide Songs</span>
+            <span v-else >Show Songs</span>
+        </button>
+
+        <div v-show="showSongs" >Currently Showing Songs</div>
+
+        <!-- Mouse events -->
+        <div class="box" @mouseover="handleEvent">Mouse Over (enter)</div>
+        <div class="box" @mouseleave="handleEvent" >Mouse leave</div>
+        <div class="box" @dblclick="handleEvent($event, 7)" >Double click</div>
+        <div class="box" @mousemove="handleMouseMove" >Mouse Move Position - {{x}}: {{y}} </div>
+    </div>
+
+    
+
+    <script src="app.js" ></script>
+</body>
+</html>
