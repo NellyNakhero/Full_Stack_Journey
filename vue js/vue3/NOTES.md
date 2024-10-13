@@ -92,3 +92,20 @@ example
 <br/>
 
 # COMPUTED PROPERTIES
+- is a way to define a data property inside our components that depends on other data that we have inside that component.
+
+
+<br/>
+<br/>
+
+# VUE CLI
+- Its a tool used to boilerplate full vue applications which come along with all the configurations and structure needed to create a full vue website/spa.
+- the command `vue create name_of_project` is used to create  a blank vue project
+- the command `vue create name_of_project` is used to  live reload and serve the project files
+
+<br/>
+<br/>
+
+# TEMPLATE REFS
+- used to get a handle of the a dom element for any sort of manipulations.
+- allows storing of references of a dom element inside a variable.
