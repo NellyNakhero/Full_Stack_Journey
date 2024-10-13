@@ -115,3 +115,10 @@ example
 
 # PROPS
 - used to pass data into the component from parent component
+
+<br/>
+<br/>
+
+# SLOTS
+- used to insert more complex content into a component.
+- they are specially designed to pass template into components
