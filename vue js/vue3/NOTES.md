@@ -122,3 +122,18 @@ example
 # SLOTS
 - used to insert more complex content into a component.
 - they are specially designed to pass template into components
+
+<br/>
+<br/>
+
+# TELEPORT
+- It teleports and renders some of the content made inside the app component to a different place in the dom entirely.
+- the new location can be outside of the scope of view app itself
+
+
+<br/>
+<br/>
+
+# LIFECYCLE HOOKS
+- Each Vue component instance goes through a series of initialization steps when it's created - for example, it needs to set up data observation, compile the template, mount the instance to the DOM, and update the DOM when data changes. Along the way, it also runs functions called lifecycle hooks, giving users the opportunity to add their own code at specific stages.
+- READ MORE: https://vuejs.org/guide/essentials/lifecycle.html
