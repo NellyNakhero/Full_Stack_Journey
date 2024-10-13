@@ -109,3 +109,9 @@ example
 # TEMPLATE REFS
 - used to get a handle of the a dom element for any sort of manipulations.
 - allows storing of references of a dom element inside a variable.
+
+<br/>
+<br/>
+
+# PROPS
+- used to pass data into the component from parent component

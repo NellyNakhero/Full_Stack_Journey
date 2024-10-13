@@ -1,15 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <Modal :heading="modal_heading" :text="modal_test" theme="sale" />
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Modal from './components/Modal.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Modal
+  },
+  data() {
+    return {
+      modal_heading: 'Sign Up For Give-Away',
+      modal_test: 'Sign up to get a ticket to your favorite musician concert'
+    }
   }
 }
 </script>
