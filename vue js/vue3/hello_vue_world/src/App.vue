@@ -1,7 +1,13 @@
 <template>
   <div>
     <img alt="Vue logo" src="./assets/logo.png">
+    <SignUp />
 
+
+
+    <br/>
+    <br/>
+    <br/>
     <h1>Ninja Reaction Timer</h1>
     <button @click="start"  :disabled="isPlaying" >play</button>
     <Block v-if="isPlaying" :delay="delay" @end="endGame" />
@@ -48,13 +54,15 @@
 import Modal from './components/Modal.vue';
 import Block from './components/reaction/Block.vue';
 import Results from './components/reaction/Results.vue';
+import SignUp from './components/web-form/SignUp.vue';
 
 export default {
   name: 'App',
   components: {
     Modal,
     Block, 
-    Results
+    Results,
+    SignUp
   },
   data() {
     return {
@@ -102,6 +110,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #ddd;
 }
 
 button {
